@@ -1,0 +1,75 @@
+.Projects {
+	padding-top: 3rem;
+}
+.Projects > h1 {
+	padding: 2rem 2rem 0;
+}
+.ProjectListItem {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	align-items: center;
+	max-width: 100vw;
+}
+.ProjectListItem:nth-child(even) {
+	background-color: rgba(118, 170, 218, 0.1);
+}
+.Image {
+	width: 100%;
+}
+.Image > img {
+	width: 100%;
+}
+.Content {
+	width: 100%;
+	padding: 0
+}
+.Taglist {
+	display: flex;
+	color: #76AADA;
+	font-weight: 900;
+	margin-top: 0.5rem;
+}
+.Taglist > li {
+	border-right: 3px solid #76AADA;
+	padding: 0 .5rem;
+}
+.Taglist > li:first-child {
+	padding-left: 0;
+}
+.Taglist > li:last-child{
+	border: none;
+}
+.Content > p {
+	margin-top: 0.5rem;
+}
+.ButtonList {
+	display: flex;
+	margin-top: 2rem;
+}
+.ButtonListItem {
+	background-color: #76AADA;
+	color: white;
+	font-size: 1rem;
+	font-weight: 900;
+	padding: .5rem 1rem;
+	margin-right: 1rem;
+	border-radius: 5px;
+}
+
+@media only screen and (min-width: 720px) {
+	.ProjectListItem {
+		flex-direction: row;
+		padding: 1rem;
+		width: calc(100vw - 2rem);
+	}
+	.ProjectListItem:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	.Image {
+		width: 50%;
+	}
+	.Content {
+		width: 50%;
+	}
+}

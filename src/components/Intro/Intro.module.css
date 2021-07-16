@@ -1,0 +1,45 @@
+.Intro {
+	min-height: 100vh;
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100vw;
+	padding-top: 5rem;
+}
+.Content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+}
+.Content > p {
+	margin-top: 2rem;
+}
+.Image {
+	width: 100%;
+	margin-top: 2rem;
+}
+.Image > img {
+	max-height: 100%;
+	max-width: 100%;
+}
+@media only screen and (min-width: 720px) {
+	.Image {
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.Intro {
+		padding-top: 3rem;
+	}
+	.Intro {
+		flex-direction: row;
+	}
+	.Image {
+		padding: 2rem;
+	}
+	.Content {
+		width: 50%;
+	}
+}

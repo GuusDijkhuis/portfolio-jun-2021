@@ -1,0 +1,39 @@
+.Footer {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 100vw;
+	padding: 1rem;
+}
+.Content > h1 {
+	font-weight: 900;
+	font-size: 3rem;
+	text-align: left;
+}
+.Content > ul > li {
+	display: flex;
+	width: 100%;
+}
+.Content > ul {
+	margin-top: 2rem;
+}
+.Content > ul > li > span,
+.Content > ul > li > a {
+	transition: .35s ease all;
+}
+.Content > ul > li > span {
+	width: 30%;
+}
+.Content > ul > li > a {
+	width: 70%;
+}
+
+.Content > ul > li > span:first-child {
+	font-weight: 900;
+}
+.Content > ul > li > a:hover {
+	transform: translateX(3px);
+	color: rgba(0,0,0,0.5);
+}
