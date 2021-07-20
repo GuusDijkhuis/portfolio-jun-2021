@@ -31,12 +31,16 @@ const Projects = () => {
 							</ul>
 							<p>{project.text}</p>
 							<ul className={classes.ButtonList}>
-								<li className={classes.ButtonListItem}>
-									<a href={project.githubUrl} target="_blank" rel="noreferrer">GitHub</a>
-								</li>
-								<li className={classes.ButtonListItem}>
-									<a href={project.websiteUrl} target="_blank" rel="noreferrer">Website</a>
-								</li>
+								{ project.githubUrl ? (
+									<li className={classes.ButtonListItem}>
+										<a href={project.githubUrl} target="_blank" rel="noreferrer">GitHub</a>
+									</li>
+								) : '' }
+								{ project.websiteUrl ? (
+									<li className={classes.ButtonListItem}>
+										<a href={project.websiteUrl} target="_blank" rel="noreferrer">Website</a>
+									</li>
+								) : '' }
 							</ul>
 						</div>
 					</li>
