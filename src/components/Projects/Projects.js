@@ -20,7 +20,7 @@ const Projects = () => {
 				{ projects.map(project => (
 					<li className={classes.ProjectListItem}>
 						<div className={classes.Image}>
-							<img src={`http://localhost:5000/images/${project.picture}`} alt="placeholder" />
+							<img src={`https://portfolio-june-2021.herokuapp.com/images/${project.picture}`} alt="placeholder" />
 						</div>
 						<div className={classes.Content}>
 							<h2>{project.title}</h2>
